@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>第二个表单实例</title>
+</head>
+<body>
+  <h2>消费者行为调查卷</h2>
+  <form action="http://www.codefriend.top/api/form.php" method="get" accept-charset="utf-8">
+    <input type="hidden" name="tableid" value="123145345">
+    <div>
+      <label for="name">姓名：</label>
+      <input type="text" name="name" placeholder="请输入姓名"><span>(2~16个字符)</span>
+    </div>
+    <div>
+       <label for="email">Email：</label>
+       <input type="email" name="email" value="" placeholder="请输入EMAIL地址">
+    </div>
+    <div>
+      <label for="show_platform[]">常去的电商平台：</label>
+      <input type="checkbox" id="taobao" name="show_platform[]" value="taobao" checked>
+      <label for="taobao">淘宝</label>
+      <input type="checkbox" id="jd" name="show_platform[]" value="jd" checked>
+      <label for="jd">京东</label>
+
+      <input type="checkbox" id="amazon" name="show_platform[]" value="amazon" >
+      <label for="amazon">亚马逊</label>
+
+    </div>
+    <div>
+      <label for="paymethod">付款方式：</label>
+      <input type="radio" id="alipay" name="paymethod" value="alipay" checked>
+      <label for="alipay">支付宝</label>
+
+      <input type="radio" id="wepay" name="paymethod" value="wepay" >
+      <label for="wepay">微信</label>
+      <input type="radio" id="unionpay" name="paymethod" value="unionpay" >
+      <label for="unionpay">银联</label>
+    </div>
+    <div>
+      <label for="province">你所在省份：</label>
+      <select name="province" required>
+        <option value="" disabled select>请选择</option>
+        <option value="福建" >福建</option>
+        <option value="湖南" >湖南</option>
+        <option value="湖北" >湖北</option>
+        <option value="广东" >广东</option>
+      </select>
+    </div>
+    <div>
+      <label for="amout">本年度网购金额：</label>
+      <input type="number" name="amout" value="1" step="0.01" required >万
+    </div>
+    <div>
+      <label for="remark">还有什么想说的：</label>
+      <textarea name="remark" rows="4" cols="60" placeholder="请输入关于网购的一些想法"></textarea>
+    </div>
+    <div>
+      <label>个人照片：</label>
+      <input type="file" name="photo" >
+
+    </div>
+    <div >
+     <input type="submit" name="" value="提交" >
+     <input type="reset" name="" value="重置" >
+    </div>
+  </form>
+</body>
+</html>

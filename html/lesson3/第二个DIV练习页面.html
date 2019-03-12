@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+
+    <style>
+        /* 页面整体样式 */
+        body {
+            margin:0;
+            font-family::" Microsoft Yahei";
+        }
+        /* 头部样式 */
+        #header {
+            padding:8px 16px;
+            min-width:1200px;
+            font-size:0;
+            background-color:#ff4d4f;
+            color:white;
+        }
+        /* id样式*/
+        #logo {
+            display:inline-block;
+            width:30%;
+            vertical-align:middle;
+            height:48px;
+            font-size:14px;
+        }
+        /* 导航条样式 */
+        #nav {
+            display:inline-block;
+            width:70%;
+            font-size:14px;
+            text-align:right;
+            line-height:48px;
+            height:48px;
+        }
+        /* 导航条内联元素 */
+        ul li {
+            display:inline;
+            color:white;
+        }
+        /* 电影图书模块  */
+        #books, #movies {
+            min-width:1200px;
+            margin:0 auto;
+            width:1200px;
+        }
+        /* 内联块排版样式 */
+        .s-item {
+            display:inline-block;
+            box-sizing:border-box;
+            width:25%;
+            font-size:14px;
+        }
+        /* 电影图书缩略图样式 */
+        .movie,.book {
+            margin:8px;
+            padding:8px;
+            border:1px solid #ffccc7;
+            background-color:#fff1f0;
+
+
+        }
+        /* 图片块样式设定（相对位置） */
+        .size-fix {
+            position: relative;
+            width: 100%;
+            padding-bottom: 130%;
+        }
+        /* 图片样式设定（绝对位置） */
+        .size-fix img {
+            position:  absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* 电影标题 */
+        .movie h4 ,.book h4 {
+            text-align:center;
+            margin:0;
+        }
+
+
+        /* 底部样式 */
+        #footer {
+            padding:32px 16px 0 16px;
+            min-width:1200px;
+            color:white;
+            background-color:#820014;
+
+        }
+        /* 底部内容样式 */
+        #chat {
+           width:1200px;
+           margin:0 auto;
+           border-bottom:1px solid #5c0011;
+        }
+        /* 结束内容  */
+        #content1 {
+            display:inline-block;
+            width:70%;
+            height:300px;
+            font-size:24px;
+            vertical-align:top;
+            box-sizing:border-box;
+            padding-top:64px;
+        }
+        /* 二维码样式 */
+        #code {
+            display:inline-block;
+            width:30%;
+            text-align:center;
+            height:300px;
+        }
+    </style>
+    <title>第二个DIV练习页面</title>
+
+
+</head>
+<body >
+<!-- 头部块 -->
+<div id="header" >
+    <!-- 头部块居中宽度1200px -->
+  <div style="width:1200px;margin:0 auto;">
+    <!-- 内联块 （logo）-->
+    <div id="logo" >
+      <img src="logo.png" alt="logo" style="height:48px;vertical-align:middle;" /><span>极客大叔的爱好</span>
+    </div>
+    <!-- 内联块（导航） -->
+    <div id="nav" >
+        <!-- 内外边距都为O -->
+      <ul style="padding:0;margin:0;">
+        <!-- 内联元素 -->
+        <li ><a href="#movies" >喜欢的电影</a></li>
+        <li ><a href="#books" >喜欢的书</a></li>
+        <li ><a href="#chat" >聊一聊</a></li>
+      </ul>
+    </div>
+    </div>
+</div>
+
+<!-- 主页面块 -->
+<div id="main">
+    <!-- 电影模块 -->
+    <div id="movies" >
+        <!-- 标题  -->
+      <h2 style="text-align:center;">喜欢的电影</h2>
+      <!-- 水平分割线 -->
+      <hr style="margin:0 auto;border-top:4px solid #5c0011;width:64px;">
+
+      <div style="margin:0 -8px;font-size:0;">
+        <!-- 内连块 -->
+        <div class="s-item" >
+            <!-- 具体块内容 -->
+          <div class="movie">
+          <div class="size-fix">
+          <img src="movie1.webp" alt="海王" style="width:100%;">
+          </div>
+          <h4 >海王</h4>
+          </div>
+        </div>
+        <div class="s-item">
+          <div class="movie">
+          <div class="size-fix">
+          <img src="movie2.webp" alt="海扁王" style="width:100%;">
+          </div>
+          <h4 >海扁王</h4>
+          </div>
+        </div>
+        <div class="s-item">
+          <div class="movie">
+          <div class="size-fix">
+          <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2194066391.webp" alt="绣春刀" style="width:100%;">
+          </div>
+          <h4 >绣春刀</h4>
+          </div>
+        </div>
+        <div class="s-item">
+          <div class="movie">
+          <div class="size-fix">
+          <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2522069454.webp" alt="侏罗纪世界2" style="width:100%;">
+          </div>
+          <h4 >侏罗纪世界2</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 图书模块 -->
+    <div id="books" >
+        <!-- 标题  -->
+      <h2 style="text-align:center;">喜欢的书</h2>
+      <!-- 水平分割线 -->
+      <hr style="margin:0 auto;border-top:4px solid #5c0011;width:64px;">
+
+      <div style="margin:0 -8px;font-size:0;">
+        <!-- 内连块 -->
+        <div class="s-item" >
+          <div class="book">
+          <div class="size-fix">
+            <img src="https://img3.doubanio.com/view/subject/l/public/s1076372.jpg" alt="黄金时代" ">
+          </div>
+          <h4 >黄金时代</h4>
+          </div>
+        </div>
+        <div class="s-item" >
+          <div class="book">
+          <div class="size-fix">
+          <img src="https://img1.doubanio.com/view/subject/l/public/s29634528.jpg" alt="月亮与六便士" >
+          </div>
+          <h4 >月亮与六便士</h4>
+          </div>
+        </div>
+        <div class="s-item" >
+          <div class="book">
+          <div class="size-fix">
+          <img src="https://img3.doubanio.com/view/subject/l/public/s29459941.jpg" alt="断头王后" >
+          </div>
+          <h4 >断头王后</h4>
+          </div>
+        </div>
+        <div class="s-item" >
+          <div class="book">
+          <div class="size-fix">
+          <img src="https://img3.doubanio.com/view/subject/l/public/s1785715.jpg" alt="经济学原理" >
+          </div>
+          <h4 >经济学原理</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+<!-- 底部块 -->
+<div id="footer" >
+<!-- 底部内容块 -->
+    <div id="chat">
+      <div style="font-size:0;">
+          <!-- 内容内联块 -->
+          <div id="content1" >王小波说他是一只特立独行的猪，那我就当个一只特立独行的鸟吧。交个朋友么，扫下右边的二维码。
+          </div>
+          <!-- 二维码内联块 -->
+          <div id="code">
+            <img src="wechat.jpg" width="250px" alt="微信号"/>
+          </div>
+      </div>
+    </div>
+    <div style="line-height:64px;text-align:center;">
+    版权所有&copy;LLL
+    </div>
+  </div>
+·
+  </body>

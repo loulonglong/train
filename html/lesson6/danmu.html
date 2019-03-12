@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>danmu</title>
+    <script type="text/javascript">
+
+    </script>
+    <style type="text/css">
+        .screen{
+            position: relative;
+            margin-top: 20px;
+            height: 500px;
+            margin-left: 20px;
+            margin-right: 20px;
+            border: 1px #ccc solid;
+            font-size: 30px;
+            overflow: hidden;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div ><center><h1>弹幕墙</h1></center></div>
+    <div class="screen">
+
+    </div>
+
+    <div class="submit" style="font-size:20px;margin-top: 20px;">
+        <center>
+            <input id="comments" type="text" name="comments" placeholder="输入弹幕" style="height:30px;width:300px;">
+        </center>
+        <center>
+            <button id="submit" style="height:30px;width:100px;">发射</button>
+            <button id="status" style="height:30px;width:100px;">关闭弹幕</button>
+
+            </center>
+            <center>
+            <button id="generateDM" style="height:30px;width:100px;">生成弹幕数据</button>
+            </center>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="danmu.js"></script>
+</body>
+</html>
