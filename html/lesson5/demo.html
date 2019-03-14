@@ -30,13 +30,13 @@
             background-image:none;
             background-repeat: repeat-x;
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-    .circle{
+/*     .circle{
       position: absolute;
       bottom: 10px;
       right: 10px;
     }
 
-    .circle ul li{
+    .circle ol li{
       width: 10px;
       height: 10px;
       background: rgba(0,0,0,0.5);
@@ -44,6 +44,9 @@
       float: left;
       margin-right: 10px;
     }
+    .circle ol li.acitve{
+      background: rgb(255,255,255);
+    } */
 
     </style>
     <script>
@@ -64,7 +67,7 @@
                   <div id="tv-1" class="carousel-inner">
                   </div>
                             <!-- 电视剧分页 -->
-                            <div class="btn-group " style="text-align:center;">
+<!--                             <div class="btn-group " style="text-align:center;">
                               <input type="button" class="btn btn-default start-slide" value="Start">
                               <input type="button" class="btn btn-default pause-slide" value="Pause">
                               <input type="button" class="btn btn-default prev-slide" value="Previous Slide">
@@ -72,22 +75,15 @@
                               <input type="button" class="btn btn-default slide-two" value="Slide 2">
                               <input type="button" class="btn btn-default slide-three" value="Slide 3">
                               <input type="button" class="btn btn-default next-slide" value="Next Slide">
-                                 <!-- 轮播（Carousel）指标 -->
-                            <ol class="carousel-indicators text-primary">
+                                 <!-- 轮播（Carousel）指标 --> -->
+
+                            <ol class="carousel-indicators bg-inverse">
                                 <li data-target="#gallery-Carousel" data-slide-to="0" class="active"></li>
                                 <li data-target="#gallery-Carousel" data-slide-to="1"></li>
                                 <li data-target="#gallery-Carousel" data-slide-to="2"></li>
                             </ol>
-                            <div class="circle" id='cicle'>
-                                <ul>
-                                  <li class='current'></li>
-                                  <li></li>
-                                  <li></li>
-                                  <li></li>
-                                  <li></li>
-                                </ul>
-                              </div>
-                          </div>
+
+
                   </div>
 </div>
 </div>
