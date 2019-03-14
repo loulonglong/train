@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-        alert("HTML: " + $("#tv-1").html());
 
         // 初始化轮播
         $(".start-slide").click(function(){
