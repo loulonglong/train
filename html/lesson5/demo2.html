@@ -101,90 +101,7 @@
     width: 675px;
     float: left;
 }
-     ol li{
-      width: 10px;
-      height: 10px;
-      background: rgba(0,0,0,0.5);
- }
-     ol li.acitve{
-      background: rgb(255,255,255);
-    }
-
- .slide-ctrl {
-    text-align: center;
-    float: none;
-    text-align: center;
-    margin: 0 0 13px;
-    top: -7px;
-}
-.ui-slide-control a {
-    display: block;
-    float: left;
-    width: 18px;
-    height: 18px;
-    margin-right: 5px;
-    cursor: pointer;
-    background: url("https://img3.doubanio.com//f/movie/708be21a7bb2d0f21419dc4e2e2fde8b21ad661a/pics/movie/slide_swithc_2.png") no-repeat;
-}
-.slide-ctrl .dot {
-    display: inline-block;
-    float: none;
-    margin: 0;
-    cursor: pointer;
-}
-.slide-ctrl .btn-prev {
-    margin-right: 10px;
-}
- .slide-ctrl .btn-next {
-    margin-left: 5px;
-}
- .slide-ctrl a {
-    display: inline-block;
-    float: none;
-    margin: 0;
-    cursor: pointer;
-}
- .slide-ctrl .dot.activate {
-    background-color: #6198D7;
-}
- .slide-ctrl .dot {
-    display: inline-block;
-    float: none;
-    margin: 0;
-    cursor: pointer;
-}
-.ui-slide-control .btn-prev {
-    background-position: 0 0;
-}
-.ui-slide-control .btn-next {
-    background-position: -18px 0;
-}
- .slide-ctrl .dot {
-    width: 6px;
-    height: 6px;
-    background-color: #D8D8D8;
-    border-radius: 50%;
-    position: relative;
-    top: -5px;
-    margin-right: 5px;
-}
- .slide-ctrl .dot {
-    display: inline-block;
-    float: none;
-    margin: 0;
-    cursor: pointer;
-}
- .slide-ctrl {
-    text-align: center;
-    float: none;
-    text-align: center;
-    margin: 0 0 13px;
-    top: -7px;
-}
-
-
     </style>
-
     <script>
 
     </script>
@@ -194,7 +111,6 @@
 <div id="content">
 <div class="article">
 <!-- 电视剧主题 -->
-
         <div id="tv-frames" class="row ">
             <!-- 电视剧标题 -->
             <div class="row " style="padding-left: 20px;padding-top: 20px;height: 60px;">
@@ -204,16 +120,36 @@
                   <!-- 轮播（Carousel）项目 -->
                   <div id="tv-1" class="carousel-inner">
                   </div>
+                            <!-- 电视剧分页 -->
+<!--                             <div class="btn-group " style="text-align:center;">
+                              <input type="button" class="btn btn-default start-slide" value="Start">
+                              <input type="button" class="btn btn-default pause-slide" value="Pause">
+                              <input type="button" class="btn btn-default prev-slide" value="Previous Slide">
+                              <input type="button" class="btn btn-default slide-one" value="Slide 1">
+                              <input type="button" class="btn btn-default slide-two" value="Slide 2">
+                              <input type="button" class="btn btn-default slide-three" value="Slide 3">
+                              <input type="button" class="btn btn-default next-slide" value="Next Slide">
+                                 <!-- 轮播（Carousel）指标 --> -->
 
-                <div class=" slide-ctrl ui-slide-control ">
-                    <a class="btn-prev prev-slide" href="javascript:void(0)"></a>
-                    <i class="dot" data-target="#gallery-Carousel" data-index="0"></i>
-                    <i class="dot" data-target="#gallery-Carousel" data-index="1"></i>
-                    <i class="dot" data-target="#gallery-Carousel" data-index="2"></i>
-                    <a class="btn-next next-slide" href="javascript:void(0)"></a>
-                </div>
-            </div>
-</div></div></div></div>
+                          <div class="slide-ctrl ui-slide-control">
+                            <a class="btn-prev" href="javascript:void(0)"></a>
+
+                                    <i class="dot" data-index="0"></i>
+
+                                    <i class="dot" data-index="1"></i>
+
+                                    <i class="dot" data-index="2"></i>
+
+                                    <i class="dot" data-index="3"></i>
+
+                                    <i class="dot activate" data-index="4"></i>
+
+                            <a class="btn-next" href="javascript:void(0)"></a>
+                        </div>
+
+                  </div>
+</div>
+</div></div></div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>

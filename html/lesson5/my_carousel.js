@@ -3,29 +3,57 @@ $(document).ready(function(){
 
         // 初始化轮播
         $(".start-slide").click(function(){
-            $("#gallery-Carousel").carousel('cycle');
+            $("#movies-Carousel").carousel('cycle');
         });
         // 停止轮播
         $(".pause-slide").click(function(){
-            $("#gallery-Carousel").carousel('pause');
+            $("#movies-Carousel").carousel('pause');
         });
         // 循环轮播到上一个项目
         $(".prev-slide").click(function(){
-            $("#gallery-Carousel").carousel('prev');
+            $("#movies-Carousel").carousel('prev');
         });
         // 循环轮播到下一个项目
         $(".next-slide").click(function(){
-            $("#gallery-Carousel").carousel('next');
+            $("#movies-Carousel").carousel('next');
         });
         // 循环轮播到某个特定的帧
         $(".slide-one").click(function(){
-            $("#gallery-Carousel").carousel(0);
+            $("#movies-Carousel").carousel(0);
         });
         $(".slide-two").click(function(){
-            $("#gallery-Carousel").carousel(1);
+            $("#movies-Carousel").carousel(1);
         });
         $(".slide-three").click(function(){
-            $("#gallery-Carousel").carousel(2);
+            $("#movies-Carousel").carousel(2);
+        });
+
+
+        // 循环轮播到上一个项目
+        $(".tv-prev-slide").click(function(){
+            $("#tv-Carousel").carousel('prev');
+        });
+        // 循环轮播到下一个项目
+        $(".tv-next-slide").click(function(){
+            $("#tv-Carousel").carousel('next');
+        });
+        // 循环轮播到某个特定的帧
+        $(".tv-slide-one").click(function(){
+            $("#tv-Carousel").carousel(0);
+        });
+        $(".tv-slide-two").click(function(){
+            $("#tv-Carousel").carousel(1);
+        });
+        $(".tv-slide-three").click(function(){
+            $("#tv-Carousel").carousel(2);
+        });
+
+        $(".gallery-prev-slide").click(function(){
+            $("#gallery-Carousel").carousel('prev');
+        });
+        // 循环轮播到下一个项目
+        $(".gallery-next-slide").click(function(){
+            $("#gallery-Carousel").carousel('next');
         });
 
 
