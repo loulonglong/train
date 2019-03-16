@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <!-- 移动端自适应 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Demo</title>
+
+    <style >
+    html body, html td, html th, html .pl, html input {
+    font-size: 13px;
+              }
+    body, td, th {
+    font: 12px Helvetica,Arial,sans-serif;
+    line-height: 1.62;
+    }
+    body {
+    margin: 0;
+    }
+    @media (max-width: 1024px)
+    body {
+        width: 1024px;
+    }
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#wrapper {
+    width: 1040px;
+    margin: 0 auto;
+}
+@media (max-width: 1024px)#wrapper {
+    width: 1000px;
+}
+#content {
+    min-height: 420px;
+}
+.gaia {
+    margin-bottom: 40px;
+}
+.grid-16-8 .article {
+    width: 675px;
+    float: left;
+}
+@media (max-width: 1024px)
+body .grid-16-8 .article {
+    padding-right: 25px;
+}
+.gaia .fliter-wp {
+    overflow: hidden;
+    zoom: 1;
+}
+.gaia.gaia-lite .fliter-wp h2>[data-type], .gaia.gaia-lite .fliter-wp .filter {
+    float: left;
+}
+.gaia.gaia-lite .fliter-wp h2>[data-type] {
+    font-size: 16px;
+}
+
+.gaia.gaia-lite .fliter-wp .filter {
+    width: 450px;
+    margin-right: -50px;
+    margin-left: 14px;
+}
+.gaia.gaia-lite .tags {
+    position: relative;
+    top: 1px;
+}
+.gaia .tags, .gaia .sub-tags {
+    overflow: hidden;
+    zoom: 1;
+}
+.gaia .tags .tag-list, .gaia .tags .sub-tag-list, .gaia .sub-tags .tag-list, .gaia .sub-tags .sub-tag-list {
+    width: auto;
+    display: inline;
+    padding-right: 5px;
+}
+.tag-list {
+    width: 220px;
+}
+.gaia.gaia-lite .fliter-wp h2 .activate {
+    color: #111;
+    background: none;
+}
+.gaia.gaia-lite .tags label {
+    margin: 0;
+    margin-right: 12px;
+    padding: 0;
+    color: #9B9B9B;
+    vertical-align: inherit;
+    font-size: 13px;
+    border-radius: 0;
+}
+.gaia .tags .activate, .gaia .sub-tags .activate {
+    background: #4b8ccb;
+    color: #fff;
+}
+.gaia .tags label, .gaia .tags .custom-btn, .gaia .sub-tags label, .gaia .sub-tags .custom-btn {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    cursor: pointer;
+    padding: 1px 10px;
+    margin: 0 3px 5px 0;
+    color: #666;
+    font-size: 14px;
+    border-radius: 2px;
+    background: none;
+}
+.gaia h2 .activate {
+    color: #111;
+    cursor: default;
+}
+.gaia .tags label input, .gaia .tags .custom-btn input, .gaia .sub-tags label input, .gaia .sub-tags .custom-btn input {
+    display: none;
+}
+input {
+    font-size: 12px;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+input[type="radio" i], input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    margin: 3px 0.5ex;
+    padding: initial;
+    border: initial;
+}
+.gaia .tags .activate, .gaia .sub-tags .activate {
+    background: #4b8ccb;
+    color: #fff;
+}
+.gaia .list-wp {
+    width: 675px;
+    overflow: hidden;
+    margin-right: -10px;
+}
+.gaia .slider .slide-container {
+    overflow: hidden;
+    position: relative;
+}
+.gaia .slider .slide-container .slide-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.gaia .slider .slide-container .slide-wrapper .slide-page {
+    float: left;
+}
+.gaia.gaia-lite .fliter-wp .more-link {
+    font-size: 13px;
+    float: right;
+    position: relative;
+    top: 2px;
+}
+a:visited {
+    color: #666699;
+    text-decoration: none;
+}
+a:link {
+    color: #37a;
+    text-decoration: none;
+}
+a {
+    cursor: pointer;
+}
+a {
+    background-color: transparent;
+}
+.gaia .slider .slide-container .slide-wrapper .slide-page {
+    float: left;
+}
+.gaia .item:link, .gaia .item:visited, .gaia .item:hover, .gaia .item:active {
+    background: none;
+    color: #37a;
+}
+.gaia .item {
+    display: block;
+    float: left;
+    color: #37a;
+    font-size: 13px;
+    text-align: center;
+    margin: 0 25px 10px 0;
+    width: 115px;
+}
+.gaia .item .cover-wp {
+    background-size: 100%;
+    height: 161px;
+    overflow: hidden;
+}
+.gaia .item {
+    display: block;
+    float: left;
+    color: #37a;
+    font-size: 13px;
+    text-align: center;
+    margin: 0 25px 10px 0;
+    width: 115px;
+}
+form {
+    margin: 0;
+    padding: 0;
+    border: 0px;
+}
+    </style>
+    <script>
+
+    </script>
+</head>
+<body >
+<div id="wrapper">
+<div id="content">
+<div class="grid-16-8 clearfix">
+<div id="dale_movie_homepage_top_large" ad-status="loaded"></div>
+<div class="article">
+<div class="list-wp">
+<div class="gaia gaia-lite gaia-movie slide-mode">
+<div class="fliter-wp">
+      <h2>
+          <div data-type="movie" class="activate">最近热门电影</div>
+          <div class="filter">
+              <form action="get" class="gaia_frm" autocomplete="off">
+                  <input type="hidden" name="type" value="movie">
+                  <div class="tags">
+                      <div class="tag-list"><label class="activate">
+            热门
+            <input type="radio" name="tag" value="热门" checked="checked">
+
+        </label>
+
+        <label>
+            最新
+            <input type="radio" name="tag" value="最新">
+
+        </label>
+
+        <label>
+            豆瓣高分
+            <input type="radio" name="tag" value="豆瓣高分">
+
+        </label>
+
+        <label>
+            冷门佳片
+            <input type="radio" name="tag" value="冷门佳片">
+
+        </label>
+
+        <label>
+            华语
+            <input type="radio" name="tag" value="华语">
+
+        </label>
+
+        <label>
+            欧美
+            <input type="radio" name="tag" value="欧美">
+
+        </label>
+
+        <label>
+            韩国
+            <input type="radio" name="tag" value="韩国">
+
+        </label>
+
+        <label>
+            日本
+            <input type="radio" name="tag" value="日本">
+
+        </label></div>
+                  </div>
+                  <input type="hidden" name="page_limit" value="50">
+                  <input type="hidden" name="page_start" value="0">
+              </form>
+          </div>
+          <div class="fliter-placeholder" style="height: 0px;"></div>
+          <a href="/explore#!type=movie&amp;tag=%E7%83%AD%E9%97%A8" class="more-link">更多»</a>
+      </h2>
+    </div>
+<div class="list-wp">
+<div class="slider">
+<!--             <div class="slide-container" style="height: 426px;">
+                <div class="slide-wrapper" style="width: 4900px; left: 0px;">
+                    <div class="slide-page" style="width: 700px;" data-index="4"> -->
+
+
+<div id="tv-frames" class="row ">
+            <!-- 电视剧标题 -->
+            <div class="row " style="padding-left: 20px;padding-top: 20px;height: 60px;">
+              <h4>电视剧</h4>
+            </div>
+            <div id="gallery-Carousel" class="carousel slide carousel-inner">
+                  <!-- 轮播（Carousel）项目 -->
+                  <div id="tv-1" class="carousel-inner">
+                  </div>
+                            <!-- 电视剧分页 -->
+<!--                             <div class="btn-group " style="text-align:center;">
+                              <input type="button" class="btn btn-default start-slide" value="Start">
+                              <input type="button" class="btn btn-default pause-slide" value="Pause">
+                              <input type="button" class="btn btn-default prev-slide" value="Previous Slide">
+                              <input type="button" class="btn btn-default slide-one" value="Slide 1">
+                              <input type="button" class="btn btn-default slide-two" value="Slide 2">
+                              <input type="button" class="btn btn-default slide-three" value="Slide 3">
+                              <input type="button" class="btn btn-default next-slide" value="Next Slide">
+                                 <!-- 轮播（Carousel）指标 --> -->
+
+                          <div class="slide-ctrl ui-slide-control">
+                            <a class="btn-prev" href="javascript:void(0)"></a>
+
+                                    <i class="dot" data-index="0"></i>
+
+                                    <i class="dot" data-index="1"></i>
+
+                                    <i class="dot" data-index="2"></i>
+
+                                    <i class="dot" data-index="3"></i>
+
+                                    <i class="dot activate" data-index="4"></i>
+
+                            <a class="btn-next" href="javascript:void(0)"></a>
+                        </div>
+
+                  </div>
+</div>
+</div>
+</div></div></div></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="my_carousel.js"></script>
+    <script src="tv_div_generation.js" ></script>
+
+
+  </body>

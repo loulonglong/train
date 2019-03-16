@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>夹娃娃</title>
+    <script type="text/javascript">
+
+    </script>
+    <style type="text/css">
+        .screen{
+            position: relative;
+            margin:0 auto;
+            height: 500px;
+            width:500px;
+            border: 1px #ccc solid;
+            font-size: 30px;
+            overflow: hidden;
+        }
+        div.toy {
+            width: 80px;
+            height: 80px;
+            background-size: 80px 80px;
+
+            margin:0 auto;
+            overflow: hidden;
+            position: absolute;
+            top: 420px;
+        }
+        div.paw {
+            width: 100px;
+            height: 100px;
+            background: url('images/paw.png') no-repeat;
+            background-size: 100px 100px;
+            background-position: -10px -10px;
+            margin:0 auto;
+            overflow: hidden;
+            position: absolute;
+            padding-left:10px;
+            top: 0px;
+            left: 0px;
+        }
+        div.win {
+            width: 200px;
+            height: 200px;
+            background: url('images/win.png') no-repeat;
+            background-size: 200px 200px;
+            color:red;
+            margin:0 auto;
+            overflow: hidden;
+            position: absolute;
+            padding-left:10px;
+            top: 150px;
+            left: 160px;
+        }
+        #moveR{
+
+            width: 80px;
+            height: 80px;
+            background: url('images/right.png') no-repeat;
+            background-size: 80px 80px;
+            border:none;
+
+
+        }
+        #moveL{
+
+            width: 80px;
+            height: 80px;
+            background: url('images/left.png') no-repeat;
+            background-size: 80px 80px;
+            border:none;
+        }
+
+        #go{
+
+            width: 80px;
+            height: 80px;
+            background: url('images/go.png') no-repeat;
+            background-size: 80px 80px;
+            border:none;
+
+
+        }
+    </style>
+    <script src="js/play.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+
+<body>
+    <div ><center><h1>夹娃娃</h1></center></div>
+    <div class="screen">
+        <div id="paw" class="paw">
+        </div>
+    </div>
+    <div class="controller" style="margin:0 auto;text-align:center">
+        <button type="" id="moveL"  ></button>
+        <button type="" id="go"  ></button>
+        <button type="" id="moveR"  ></button>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+</body>
+</html>

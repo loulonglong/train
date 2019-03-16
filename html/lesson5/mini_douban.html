@@ -17,19 +17,150 @@
                 min-width:1200px;
                 ;
     }
-    .carousel-control.left {
+    .carousel-indicators li{
 
-            background-image:none;
-            background-repeat: repeat-x;
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-          }
-    .carousel-control.right {
-            left: auto;
-            right: 0;
+      background-color: rgba(72, 65, 65, 0.64);
 
-            background-image:none;
-            background-repeat: repeat-x;
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    }
+    ol.carousel-indicators li.active  {
+      background-color: #8919de;
+    }
+     .slider .slide-ctrl {
+    float: none;
+    text-align: center;
+    margin: 0 0 13px;
+    top: -7px;
+    }
+    .slider .slide-ctrl .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #D8D8DA;
+    border-radius: 50%;
+    position: relative;
+    top: -5px;
+    margin-right: 5px;
+    }
+    .slider .slide-ctrl a, .gaia .slider .slide-ctrl .dot {
+    display: inline-block;
+    float: none;
+    margin: 0;
+    cursor: pointer;
+}
+
+    html body, html td, html th, html .pl, html input {
+    font-size: 13px;
+              }
+    body, td, th {
+    font: 12px Helvetica,Arial,sans-serif;
+    line-height: 1.62;
+    }
+    body {
+    margin: 0;
+    }
+    @media (max-width: 1024px)
+    body {
+        width: 1024px;
+    }
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#wrapper {
+    width: 1040px;
+    margin: 0 auto;
+}
+/* @media (max-width: 1024px)#wrapper {
+    width: 1000px;
+} */
+#content {
+    min-height: 420px;
+}
+.article {
+    width: 675px;
+    float: left;
+}
+     ol li{
+      width: 10px;
+      height: 10px;
+      background: rgba(0,0,0,0.5);
+ }
+     ol li.acitve{
+      background: rgb(255,255,255);
+    }
+
+ .slide-ctrl {
+    text-align: center;
+    float: none;
+    text-align: center;
+    margin: 0 0 13px;
+    top: -7px;
+}
+.ui-slide-control a {
+    display: block;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    cursor: pointer;
+    background: url("https://img3.doubanio.com//f/movie/708be21a7bb2d0f21419dc4e2e2fde8b21ad661a/pics/movie/slide_swithc_2.png") no-repeat;
+}
+.slide-ctrl .dot {
+    display: inline-block;
+    float: none;
+    margin: 0;
+    cursor: pointer;
+}
+.slide-ctrl .btn-prev {
+    margin-right: 10px;
+}
+ .slide-ctrl .btn-next {
+    margin-left: 5px;
+}
+ .slide-ctrl a {
+    display: inline-block;
+    float: none;
+    margin: 0;
+    cursor: pointer;
+}
+ .slide-ctrl .dot.activate {
+    background-color: #6198D7;
+}
+ .slide-ctrl .dot {
+    display: inline-block;
+    float: none;
+    margin: 0;
+    cursor: pointer;
+}
+.ui-slide-control .btn-prev {
+    background-position: 0 0;
+}
+.ui-slide-control .btn-next {
+    background-position: -18px 0;
+}
+ .slide-ctrl .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #D8D8D8;
+    border-radius: 50%;
+    position: relative;
+    top: -5px;
+    margin-right: 5px;
+}
+ .slide-ctrl .dot {
+    display: inline-block;
+    float: none;
+    margin: 0;
+    cursor: pointer;
+}
+ .slide-ctrl {
+    text-align: center;
+    float: none;
+    text-align: center;
+    margin: 0 0 13px;
+    top: -7px;
+}
 
     </style>
     <script>
@@ -38,31 +169,30 @@
 </head>
 <body >
 
-<div class="container-fluid" style="height:50px;">
+
+<div class="container-fluid" style="height:20px;">
 <!-- 导航块 -->
 <div class="row ">
     <!-- 导航 -->
-      <nav id="navbar-example" class="navbar navbar-default navbar-static-top " role="navigation">
+      <nav id="navbar-example" class="navbar navbar-default navbar-static-top " role="navigation" style="min-height:20px;height:28px;    margin-bottom: 0px;">
         <!-- 品牌标志 -->
-        <div class="navbar-header">
-           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Brand</a>
-        </div>
+
         <!-- 左边导航 -->
-        <div class="collapse navbar-collapse" >
+        <div class="collapse navbar-collapse" style="min-height:20px;height:28px;">
               <ul class="nav navbar-nav ">
-                <li><a href="#new-part">影讯&amp;购票</a></li>
-                <li><a href="#movies-frames">选电影</a>
+                <li style="line-height: 28px;font-size: 12px;vertical-align: baseline;"><a href="#new-part">影讯&amp;购票</a></li>
+                <li style="line-height: 28px;font-size: 12px;vertical-align: baseline;"><a href="#movies-frames">选电影</a>
                 </li>
-                <li><a href="#tv-frames">电视剧</a>
+                <li style="line-height: 28px;font-size: 12px;vertical-align: baseline;"><a href="#tv-frames">电视剧</a>
                 </li>
-                <li><a href="#gallery-frames">推荐</a>
+                <li style="line-height: 28px;font-size: 12px;vertical-align: baseline;"><a href="#gallery-frames">推荐</a>
                 </li>
-                <li><a href="#review-frames">影评</a>
+                <li style="line-height: 28px;font-size: 12px;vertical-align: baseline;"><a href="#review-frames">影评</a>
                 </li>
               </ul>
         <!-- 右边导航 -->
-        <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
+        <ul class="nav navbar-nav navbar-right" style="min-height:20px;height:28px;">
+        <li class="dropdown" style="min-height:20px;height:28px;">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下载客户端 <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#"></a></li>
@@ -121,18 +251,14 @@
     <div class="col-md-2 column">
     </div>
 </div>
-
-<div class="row " data-spy="scroll" data-target="#navbar-example" data-offset="0" style="height:700px;overflow:auto; position: relative;">
+<div id="wrapper">
+<div id="content">
+<div class="article">
     <!-- 左边边布局 -->
-    <div id="aside-left" class="col-md-2 column">
-    </div>
     <!-- 中间布局 -->
-    <div id="main" class="col-md-10 column">
 
 
-      <div class="row ">
         <!-- 左半部分 -->
-        <div id="left-part"  class="col-md-8 column" >
           <!-- 正在热映 -->
           <div id="new-part" class="row ">
               <!-- 热映标题 -->
@@ -193,254 +319,93 @@
                     </div>
               </div>
           </div>
-          <!-- 电影主题 -->
-          <div id="movies-frames" class="row ">
+
+<div id="movies-frames" class="row ">
             <!-- 电影标题 -->
-            <div class="row " style="padding-left: 40px;height: 60px;">
-              <h3>最近热门电影
-                <small style="margin-left: 25px;"><a href="#movies-1" data-toggle="tab">热门</a></small>
-                <small style="margin-left: 25px;"><a href="#movies-2" data-toggle="tab">最新</a></small>
-                <small style="margin-left: 25px;"><a href="#movies-2" data-toggle="tab">高分</a></small>
-              </h3>
+            <div class="row " style="padding-left: 20px;padding-top: 20px;height: 60px;">
+              <h4>最近热门电影
+                <small style="margin-left: 15px;"><a href="#movies-1" data-toggle="tab">热门</a></small>
+                <small style="margin-left: 15px;"><a href="#movies-2" data-toggle="tab">最新</a></small>
+                <small style="margin-left: 15px;"><a href="#movies-2" data-toggle="tab">豆瓣高分</a></small>
+                <small style="margin-left: 15px;"><a href="#movies-2" data-toggle="tab">冷门佳片</a></small>
+                <small style="margin-left: 15px;"><a href="#movies-2" data-toggle="tab">华语</a></small>
+                <small style="margin-left: 15px;"><a href="#movies-2" data-toggle="tab">欧美</a></small>
+                <small style="margin-left: 15px;"><a href="#movies-2" data-toggle="tab">韩国</a></small>
+                <small style="margin-left: 15px;"><a href="#movies-2" data-toggle="tab">日本</a></small>
+              </h4>
             </div>
+            <div id="movies-Carousel" class="carousel slide carousel-inner">
+                  <!-- 轮播（Carousel）项目 -->
+                  <div id="movies" class="carousel-inner">
+                  </div>
 
-            <!-- 电影缩略图 -->
-            <div id="movieTabContent" class="tab-content">
-            <div id="movies-1" class="row tab-pane fade in active">
-                    <div class="col-md-3" style="padding: 10px;">
-                      <div class="thumbnail text-center" style="margin: 0;">
-                        <a onclick="moreurl(this, {from:'mv_a_pst'})" href="https://movie.douban.com/subject/1652592/?from=showing">
-                          <img alt="300x200" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2541240741.webp" />
-                          <h4>新喜剧之王 <span style="color: #e09015;">8.7</span></h4>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-md-3" style="padding: 10px;">
-                      <div class="thumbnail text-center" style="margin: 0;">
-                        <a onclick="moreurl(this, {from:'mv_a_pst'})" href="https://movie.douban.com/subject/1652592/?from=showing">
-                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2548870813.webp" alt="惊奇队长" rel="nofollow" class="">
-                          <h4>惊奇队长 <span style="color: #e09015;">8.7</span></h4>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-md-3" style="padding: 10px;">
-                      <div class="thumbnail text-center" style="margin: 0;">
-                        <a onclick="moreurl(this, {from:'mv_a_pst'})" href="https://movie.douban.com/subject/1652592/?from=showing">
-                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2545472803.webp" alt="流浪地球" rel="nofollow" class="">
-                          <h4>流浪地球 <span style="color: #e09015;">8.7</span></h4>
-                        </a>
-
-                      </div>
-                    </div>
-                    <div class="col-md-3" style="padding: 10px;">
-                      <div class="thumbnail text-center" style="margin: 0;">
-                        <a onclick="moreurl(this, {from:'mv_a_pst'})" href="https://movie.douban.com/subject/1652592/?from=showing">
-                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2546335362.webp" style="width: 94%;" alt="驯龙高手3" rel="nofollow" class="">
-                          <h4>驯龙高手3 <span style="color: #e09015;">8.7</span></h4>
-                        </a>
-                      </div>
-                    </div>
-            </div>
-
-
-            <div id="movies-2" class="row tab-pane fade">
-                    <div class="col-md-3" style="padding: 10px;">
-                      <div class="thumbnail text-center" style="margin: 0;">
-                        <a onclick="moreurl(this, {from:'mv_a_pst'})" href="https://movie.douban.com/subject/1652592/?from=showing">
-                          <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2364094053.jpg" alt="飞屋环游记" style="width: 94.5%"; >
-                          <h4>飞屋环游记 <span style="color: #e09015;">8.7</span></h4>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-md-3" style="padding: 10px;">
-                      <div class="thumbnail text-center" style="margin: 0;">
-                        <a onclick="moreurl(this, {from:'mv_a_pst'})" href="https://movie.douban.com/subject/1652592/?from=showing">
-                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2548870813.webp" alt="惊奇队长" rel="nofollow" class="">
-                          <h4>惊奇队长 <span style="color: #e09015;">8.7</span></h4>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-md-3" style="padding: 10px;">
-                      <div class="thumbnail text-center" style="margin: 0;">
-                        <a onclick="moreurl(this, {from:'mv_a_pst'})" href="https://movie.douban.com/subject/1652592/?from=showing">
-                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2545472803.webp" alt="流浪地球" rel="nofollow" class="">
-                          <h4>流浪地球 <span style="color: #e09015;">8.7</span></h4>
-                        </a>
-
-                      </div>
-                    </div>
-                    <div class="col-md-3" style="padding: 10px;">
-                      <div class="thumbnail text-center" style="margin: 0;">
-                        <a onclick="moreurl(this, {from:'mv_a_pst'})" href="https://movie.douban.com/subject/1652592/?from=showing">
-                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2546335362.webp" style="width: 94%;" alt="驯龙高手3" rel="nofollow" class="">
-                          <h4>驯龙高手3 <span style="color: #e09015;">8.7</span></h4>
-                        </a>
-                      </div>
-                    </div>
-            </div>
-            </div>
-            <!-- 电影分页 -->
-            <div class="row ">
-                <div class="col-md-12 column text-center">
-                  <ul class="pagination">
-                    <li>
-                       <a href="#">Prev</a>
-                    </li>
-                    <li>
-                       <a href="#">1</a>
-                    </li>
-                    <li>
-                       <a href="#">2</a>
-                    </li>
-                    <li>
-                       <a href="#">3</a>
-                    </li>
-                    <li>
-                       <a href="#">4</a>
-                    </li>
-                    <li>
-                       <a href="#">5</a>
-                    </li>
-                    <li>
-                       <a href="#">Next</a>
-                    </li>
-                  </ul>
+                <div class=" slide-ctrl ui-slide-control ">
+                    <a class="btn-prev prev-slide" href="javascript:void(0)"></a>
+                    <i class="dot" data-target="#movies-Carousel" data-index="0"></i>
+                    <i class="dot" data-target="#movies-Carousel" data-index="1"></i>
+                    <i class="dot" data-target="#movies-Carousel" data-index="2"></i>
+                    <a class="btn-next next-slide" href="javascript:void(0)"></a>
                 </div>
             </div>
-          </div>
-          <!-- 电视剧主题 -->
-          <div id="tv-frames" class="row ">
+</div>
+
+<div id="tv-frames" class="row ">
             <!-- 电视剧标题 -->
             <div class="row " style="padding-left: 20px;padding-top: 20px;height: 60px;">
-              <h4>电视剧</h4>
-            </div>
-            <!-- 电视剧缩略图 -->
-            <div id="tv-1" class="row ">
-                    <div class="col-md-3" style="padding: 10px;">
-                      <div class="thumbnail text-center" style="margin: 0;">
-                        <a onclick="moreurl(this, {from:'mv_a_pst'})" href="https://movie.douban.com/subject/1652592/?from=showing">
-                          <img alt="300x200" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2541240741.webp" />
-                          <h4>新喜剧之王 <span style="color: #e09015;">8.7</span></h4>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-md-3" style="padding: 10px;">
-                      <div class="thumbnail text-center" style="margin: 0;">
-                        <a onclick="moreurl(this, {from:'mv_a_pst'})" href="https://movie.douban.com/subject/1652592/?from=showing">
-                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2548870813.webp" alt="惊奇队长" rel="nofollow" class="">
-                          <h4>惊奇队长 <span style="color: #e09015;">8.7</span></h4>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-md-3" style="padding: 10px;">
-                      <div class="thumbnail text-center" style="margin: 0;">
-                        <a onclick="moreurl(this, {from:'mv_a_pst'})" href="https://movie.douban.com/subject/1652592/?from=showing">
-                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2545472803.webp" alt="流浪地球" rel="nofollow" class="">
-                          <h4>流浪地球 <span style="color: #e09015;">8.7</span></h4>
-                        </a>
+              <h4>最近热门电视剧
+                <small style="margin-left: 15px;"><a href="#movies-1" data-toggle="tab">最近热门电视剧</a></small>
+                <small style="margin-left: 15px;"><a href="#movies-2" data-toggle="tab"> 热门</a></small>
+                <small style="margin-left: 15px;"><a href="#movies-2" data-toggle="tab">国产剧</a></small>
+                <small style="margin-left: 15px;"><a href="#movies-2" data-toggle="tab">综艺</a></small>
+                <small style="margin-left: 15px;"><a href="#movies-2" data-toggle="tab">美剧</a></small>
+                <small style="margin-left: 15px;"><a href="#movies-2" data-toggle="tab">日剧</a></small>
+                <small style="margin-left: 15px;"><a href="#movies-2" data-toggle="tab">韩剧</a></small>
+                <small style="margin-left: 15px;"><a href="#movies-2" data-toggle="tab">日本动画</a></small>
+                <small style="margin-left: 15px;"><a href="#movies-2" data-toggle="tab">纪录片</a></small>
 
-                      </div>
-                    </div>
-                    <div class="col-md-3" style="padding: 10px;">
-                      <div class="thumbnail text-center" style="margin: 0;">
-                        <a onclick="moreurl(this, {from:'mv_a_pst'})" href="https://movie.douban.com/subject/1652592/?from=showing">
-                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2546335362.webp" style="width: 94%;" alt="驯龙高手3" rel="nofollow" class="">
-                          <h4>驯龙高手3 <span style="color: #e09015;">8.7</span></h4>
-                        </a>
-                      </div>
-                    </div>
+              </h4>
             </div>
+            <div id="tv-Carousel" class="carousel slide carousel-inner">
+                  <!-- 轮播（Carousel）项目 -->
+                  <div id="tvs" class="carousel-inner">
+                  </div>
 
-            <div id="tv-2" class="row ">
-                    <div class="col-md-3" style="padding: 10px;">
-                      <div class="thumbnail text-center" style="margin: 0;">
-                        <a onclick="moreurl(this, {from:'mv_a_pst'})" href="https://movie.douban.com/subject/1652592/?from=showing">
-                          <img alt="300x200" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2541240741.webp" />
-                          <h4>新喜剧之王 <span style="color: #e09015;">8.7</span></h4>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-md-3" style="padding: 10px;">
-                      <div class="thumbnail text-center" style="margin: 0;">
-                        <a onclick="moreurl(this, {from:'mv_a_pst'})" href="https://movie.douban.com/subject/1652592/?from=showing">
-                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2548870813.webp" alt="惊奇队长" rel="nofollow" class="">
-                          <h4>惊奇队长 <span style="color: #e09015;">8.7</span></h4>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-md-3" style="padding: 10px;">
-                      <div class="thumbnail text-center" style="margin: 0;">
-                        <a onclick="moreurl(this, {from:'mv_a_pst'})" href="https://movie.douban.com/subject/1652592/?from=showing">
-                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2545472803.webp" alt="流浪地球" rel="nofollow" class="">
-                          <h4>流浪地球 <span style="color: #e09015;">8.7</span></h4>
-                        </a>
-
-                      </div>
-                    </div>
-                    <div class="col-md-3" style="padding: 10px;">
-                      <div class="thumbnail text-center" style="margin: 0;">
-                        <a onclick="moreurl(this, {from:'mv_a_pst'})" href="https://movie.douban.com/subject/1652592/?from=showing">
-                        <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2546335362.webp" style="width: 94%;" alt="驯龙高手3" rel="nofollow" class="">
-                          <h4>驯龙高手3 <span style="color: #e09015;">8.7</span></h4>
-                        </a>
-                      </div>
-                    </div>
-            </div>
-            <!-- 电视剧分页 -->
-            <div class="row ">
-                <div class="col-md-12 column text-center">
-                  <ul class="pagination">
-                    <li>
-                       <a href="#">Prev</a>
-                    </li>
-                    <li>
-                       <a href="#">1</a>
-                    </li>
-                    <li>
-                       <a href="#">2</a>
-                    </li>
-                    <li>
-                       <a href="#">3</a>
-                    </li>
-                    <li>
-                       <a href="#">4</a>
-                    </li>
-                    <li>
-                       <a href="#">5</a>
-                    </li>
-                    <li>
-                       <a href="#">Next</a>
-                    </li>
-                  </ul>
+                <div class=" slide-ctrl ui-slide-control ">
+                    <a class="btn-prev tv-prev-slide" href="javascript:void(0)"></a>
+                    <i class="dot" data-target="#tv-Carousel" data-index="0"></i>
+                    <i class="dot" data-target="#tv-Carousel" data-index="1"></i>
+                    <i class="dot" data-target="#tv-Carousel" data-index="2"></i>
+                    <a class="btn-next tv-next-slide" href="javascript:void(0)"></a>
                 </div>
             </div>
-          </div>
+</div>
           <!-- 推荐标题  -->
           <div id="gallery-frames">
            <!-- 轮播（Carousel）指标 -->
-            <div class="btn-group" style="float: right;text-align: right;">
-              <button type="button" data-target="#gallery-Carousel" data-slide="prev" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></button>
-              <button type="button" data-target="#gallery-Carousel" data-slide="next" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span></button>
-            </div>
-            <div class="row " style="padding-left: 20px;padding-top: 20px;height: 60px;">
+            <div style="padding-top: 20px;height: 60px; display:inline-block;width:85%">
             <h4>热门推荐</h4>
             </div>
+                  <div class="slide-ctrl ui-slide-control" style="float:right;margin:30px 0 0 15px;">
+                      <span class="prev-btn"><a class="btn-prev gallery-prev-slide" href="javascript:void(0)"></a></span>
+                      <span class="next-btn"><a class="btn-next gallery-next-slide" href="javascript:void(0)"></a></span>
+                  </div>
+
             <!-- 推荐主题 -->
             <div class="row " style="background-color: #f0f3f5;" >
                 <div id="gallery-Carousel" class="carousel slide carousel-inner">
                   <!-- 轮播（Carousel）项目 -->
                   <div class="carousel-inner">
                     <div class="item active">
-                        <div class="row">
+                        <div >
 
-                          <div class="col-md-4 column">
+                          <div class="" style="display:inline-block;width:50%;">
                           <a href="https://www.douban.com/note/709781500/?from=gallery" target="_blank" data-fid="3284">
                             <img src="https://img3.doubanio.com/view/movie_gallery_frame_hot_rec/normal/public/fd346360d5ca490.jpg" alt="《惊队》之后，哪些超级英雄电影值得期待？" width="350" height="240">
                           </a>
                           </div>
-                          <div class="col-md-8 column text-center">
+                          <div class=" " style="display:inline-block;width:48%;">
                                   <a href="https://www.douban.com/note/709781500/?from=gallery" target="_blank" data-fid="3284">
-                                    <h3>《惊队》之后，哪些超级英雄电影值得期待？</h3>
+                                    <h4>《惊队》之后，哪些超级英雄电影值得期待？</h4>
                                   </a>
                                   <p>未来三年，大橘已定！
                                   </p>
@@ -448,32 +413,32 @@
                         </div>
                       </div>
                     <div class="item ">
-                        <div class="row">
+                        <div class="">
 
-                          <div class="col-md-4 column">
+                          <div class="" style="display:inline-block;width:50%;">
                               <a href="https://movie.douban.com/trailer/244054/?from=gallery" target="_blank" data-fid="3281">
                                   <img src="https://img3.doubanio.com/view/movie_gallery_frame_hot_rec/normal/public/f900eec59445c11.jpg" alt="《X战警：黑凤凰》官方中字预告" width="350" height="240">
                               </a>
                           </div>
-                          <div class="col-md-8 column text-center">
+                          <div class=" " style="display:inline-block;width:48%;">
                                 <a href="https://movie.douban.com/trailer/244054/?from=gallery" target="_blank" data-fid="3281">
-                                  <h3>《X战警：黑凤凰》官方中字预告</h3>
+                                  <h4>《X战警：黑凤凰》官方中字预告</h4>
                                 </a>
                                   <p> X教授、万磁王被虐，魔形女领便当~</p>
                           </div>
                         </div>
                       </div>
                     <div class="item ">
-                        <div class="row">
+                        <div class="">
 
-                          <div class="col-md-4 column">
+                          <div class="" style="display:inline-block;width:50%;">
                             <a href="https://movie.douban.com/trailer/244061/?from=gallery" target="_blank" data-fid="3280">
                                 <img src="https://img3.doubanio.com/view/movie_gallery_frame_hot_rec/normal/public/e8deab7955cb91f.jpg" alt="《权力的游戏》第八季最终季正式预告" width="350" height="240">
                             </a>
                           </div>
-                          <div class="col-md-8 column text-center">
+                          <div class=" " style="display:inline-block;width:48%;">
                                   <a href="https://movie.douban.com/trailer/244061/?from=gallery" target="_blank" data-fid="3280">
-                                    <h3>《权力的游戏》第八季最终季正式预告</h3>
+                                    <h4>《权力的游戏》第八季最终季正式预告</h4>
                                   </a>
                                   <p>雪诺、龙妈、珊莎、二丫回归！4.14HBO播出~
                                   </p>
@@ -481,14 +446,25 @@
                         </div>
                       </div>
                   </div>
+
                 </div>
+            </div>
+            <div class="btn-group" style="text-align:center;">
+
+
             </div>
           </div>
             <!-- 影评 -->
           <div id="review-frames">
-              <div class="row " style="padding-left: 20px;padding-top: 20px;height: 60px;">
-                <h4>最受欢迎的影评<span><a href="/review/best/"> 更多热门影评»</a></span><span><a href="/review/latest/"> 新片影评»</a></span></h4>
-              </div>
+            <div class="row " style="padding-left: 20px;padding-top: 20px;height: 60px;">
+              <h4>最受欢迎的影评
+                <small style="margin-left: 15px;"><a href="/review/best/">更多热门影评»</a></small>
+                <small style="margin-left: 15px;"><a href="/review/latest/">  新片影评»</a></small>
+
+
+              </h4>
+            </div>
+
               <div class="media">
                 <div class="media-left media-top">
                   <a  href="https://movie.douban.com/subject/1292220/?from=reviews" >
@@ -555,9 +531,11 @@
     <div id="aside-right" class="col-md-2 column">
     </div>
 </div>
-</div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="my_carousel.js"></script>
+    <script src="tv_div_generation.js" ></script>
   </body>

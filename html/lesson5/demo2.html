@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <!-- 移动端自适应 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>movie</title>
+
+    <style>
+
+/*     #tittle {
+                background-color: #f0f3f5;
+                color:#27a;
+                min-width:1200px;
+                ;
+    }
+    .carousel-control.left {
+
+            background-image:none;
+            background-repeat: repeat-x;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+          }
+    .carousel-control.right {
+            left: auto;
+            right: 0;
+
+            background-image:none;
+            background-repeat: repeat-x;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    .circle{
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    } */
+
+    .carousel-indicators li{
+
+      background-color: rgba(72, 65, 65, 0.64);
+
+    }
+    ol.carousel-indicators li.active  {
+      background-color: #8919de;
+    }
+     .slider .slide-ctrl {
+    float: none;
+    text-align: center;
+    margin: 0 0 13px;
+    top: -7px;
+    }
+    .slider .slide-ctrl .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #D8D8DA;
+    border-radius: 50%;
+    position: relative;
+    top: -5px;
+    margin-right: 5px;
+    }
+    .slider .slide-ctrl a, .gaia .slider .slide-ctrl .dot {
+    display: inline-block;
+    float: none;
+    margin: 0;
+    cursor: pointer;
+}
+
+    html body, html td, html th, html .pl, html input {
+    font-size: 13px;
+              }
+    body, td, th {
+    font: 12px Helvetica,Arial,sans-serif;
+    line-height: 1.62;
+    }
+    body {
+    margin: 0;
+    }
+    @media (max-width: 1024px)
+    body {
+        width: 1024px;
+    }
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#wrapper {
+    width: 1040px;
+    margin: 0 auto;
+}
+/* @media (max-width: 1024px)#wrapper {
+    width: 1000px;
+} */
+#content {
+    min-height: 420px;
+}
+.article {
+    width: 675px;
+    float: left;
+}
+    </style>
+    <script>
+
+    </script>
+</head>
+<body >
+<div id="wrapper">
+<div id="content">
+<div class="article">
+<!-- 电视剧主题 -->
+        <div id="tv-frames" class="row ">
+            <!-- 电视剧标题 -->
+            <div class="row " style="padding-left: 20px;padding-top: 20px;height: 60px;">
+              <h4>电视剧</h4>
+            </div>
+            <div id="gallery-Carousel" class="carousel slide carousel-inner">
+                  <!-- 轮播（Carousel）项目 -->
+                  <div id="tv-1" class="carousel-inner">
+                  </div>
+                            <!-- 电视剧分页 -->
+<!--                             <div class="btn-group " style="text-align:center;">
+                              <input type="button" class="btn btn-default start-slide" value="Start">
+                              <input type="button" class="btn btn-default pause-slide" value="Pause">
+                              <input type="button" class="btn btn-default prev-slide" value="Previous Slide">
+                              <input type="button" class="btn btn-default slide-one" value="Slide 1">
+                              <input type="button" class="btn btn-default slide-two" value="Slide 2">
+                              <input type="button" class="btn btn-default slide-three" value="Slide 3">
+                              <input type="button" class="btn btn-default next-slide" value="Next Slide">
+                                 <!-- 轮播（Carousel）指标 --> -->
+
+                          <div class="slide-ctrl ui-slide-control">
+                            <a class="btn-prev" href="javascript:void(0)"></a>
+
+                                    <i class="dot" data-index="0"></i>
+
+                                    <i class="dot" data-index="1"></i>
+
+                                    <i class="dot" data-index="2"></i>
+
+                                    <i class="dot" data-index="3"></i>
+
+                                    <i class="dot activate" data-index="4"></i>
+
+                            <a class="btn-next" href="javascript:void(0)"></a>
+                        </div>
+
+                  </div>
+</div>
+</div></div></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="my_carousel.js"></script>
+    <script src="tv_div_generation.js" ></script>
+
+
+  </body>
