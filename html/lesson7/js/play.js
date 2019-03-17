@@ -26,7 +26,39 @@ window.onload=function(){
             this.left = left;
             this.bgPath =bgPath;
             // 初始化
-            this.init =function() {
+            // this.init =function() {
+            //     // 创建div
+            //     this.dom = $("<div class='toy'></div>");
+            //     // 加入到屏幕
+            //     $(".screen").append(this.dom);
+            //     // 设置初始位置
+            //     this.dom.css('left', this.left + 'px');
+            //     console.log(this.bgPath);
+            //     // 设置背景
+            //     this.dom.css('background-image', this.bgPath);
+            // }
+            // 对象生成初始化
+            this.init();
+            //玩具被抓住后执行
+            // this.catch = function(){
+            //     // 抓住
+            //     catched = true;
+            //     // 声明对象引用
+            //     var toy =this.dom;
+            //     // 改变对象状态
+            //     toy.addClass("catched");
+            //     // 玩具运动
+            //     toy.animate({'top': 0}, 2000, "linear", function(){});
+            //     console.log("catch:" +toy);
+            //     // 完成后出庆祝效果（2秒后）
+            //     setTimeout(function(){
+            //        $(".screen").append(wingame);
+            //        catched =false;
+            //     }, 2000);
+            // }
+        }
+        // 原型添加init函数
+            Toy.prototype.init =function() {
                 // 创建div
                 this.dom = $("<div class='toy'></div>");
                 // 加入到屏幕
@@ -37,10 +69,10 @@ window.onload=function(){
                 // 设置背景
                 this.dom.css('background-image', this.bgPath);
             }
-            // 对象生成初始化
-            this.init();
-            //玩具被抓住后执行
-            this.catch = function(){
+
+
+        // 原型添加catch函数
+            Toy.prototype.catch = function(){
                 // 抓住
                 catched = true;
                 // 声明对象引用
@@ -56,7 +88,7 @@ window.onload=function(){
                    catched =false;
                 }, 2000);
             }
-        }
+
 
         // 随机生成玩具
         for (var i = 0; i < 9; i++) {
