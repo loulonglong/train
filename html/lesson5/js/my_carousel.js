@@ -55,6 +55,12 @@ $(document).ready(function(){
         $(".gallery-next-slide").click(function(){
             $("#gallery-Carousel").carousel('next');
         });
-
+        $(".news-prev-slide").click(function(){
+            $("#news-Carousel").carousel('prev');
+        });
+        // 循环轮播到下一个项目
+        $(".news-next-slide").click(function(){
+            $("#news-Carousel").carousel('next');
+        });
 
 });

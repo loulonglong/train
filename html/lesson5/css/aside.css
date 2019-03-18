@@ -1,0 +1,143 @@
+ .aside {
+    width: 300px;
+    float: right;
+}
+
+.rating_answer {
+    margin: 20px 0 20px;
+    padding: 12px 0 12px 18px;
+    line-height: 1.5;
+    background: #f2f7f6;
+    border-radius: 4px;
+    width: 282px;
+}
+.rating_answer ul {
+    font-size: 14px;
+    color: #cedcd9;
+}
+.rating_answer li,.embassy-list li {
+    list-style: none;
+    font-size: 13px;
+}
+.hot_link {
+    margin: 0 0 20px;
+    padding: 16px 0 16px 18px;
+    line-height: 1.5;
+    background: #f2f7f6;
+    border-radius: 4px;
+    width: 282px;
+}
+ .hot_link h2 {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    color: #072;
+}
+.hot_link ul {
+    font-size: 14px;
+    list-style: disc inside;
+    color: #cedcd9;
+}
+.hot_link li {
+    margin-top: 8px;
+    list-style: none;
+    font-size: 13px;
+}
+#billboard {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin-bottom: 50px;
+}
+#billboard h2 {
+    margin-bottom: 5px;
+    color: #111;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+
+}
+#billboard .order {
+    width: 20px;
+    font-size: 9px;
+    text-align: center;
+}
+#billboard td {
+    padding: 7px 0;
+}
+#billboard td {
+    border-bottom: 1px solid #eaeaea;
+}
+#billboard .title {
+    width: 290px;
+}
+#doulist {
+    margin-bottom: 40px;
+}
+#doulist ul {
+    border-top: 1px solid #eee;
+}
+ul li{
+        list-style: none;
+}
+#doulist ul li {
+    position: relative;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    zoom: 1;
+}
+#doulist li span {
+    font-size: 13px;
+    float: right;
+    color: #999;
+}
+.aside .mod {
+    margin: 0 0 40px;
+}
+
+#content h2 {
+    color: #111;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 18px;
+
+}
+.embassy-list ,.contact-and-cooperation-bd ul,#doulist ul{
+    padding-left: 0px;
+}
+ul.embassy-list li {
+    width: 60px;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+}
+ul.embassy-list li .icon-embassy-weibo {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 5px auto;
+    background-image: url(https://img3.doubanio.com/f/movie/8f5f3bdbdc71bfd34eef8e3f16d13c857e59301b/pics/movie/home_weibo.png);
+
+}
+ul.embassy-list li .icon-embassy-film-pro{display:block;width:40px;height:40px;margin:0 auto 5px auto;background:url(https://img3.doubanio.com/f/movie/58304d3dae0aa268f2ba8e6ba4cd3a57a999d6fb/pics/movie/home_film_pro@2x.jpg) no-repeat;background-size:contain}
+ul.embassy-list li .icon-embassy-weibo{display:block;width:40px;height:40px;margin:0 auto 5px auto;background-image:url(https://img3.doubanio.com/f/movie/8f5f3bdbdc71bfd34eef8e3f16d13c857e59301b/pics/movie/home_weibo.png);}
+ul.embassy-list li .icon-embassy-club-site{display:block;position:relative;width:40px;height:40px;margin:0 auto 5px auto;background:url(https://img3.doubanio.com/f/movie/cab17c6de1bfdaf598c9ae235738e20022f49e23/pics/movie/home_club@2x.jpg) no-repeat;background-size:contain}
+ul.embassy-list li .icon-embassy-bite-me{display:block;position:relative;width:40px;height:40px;margin:0 auto 5px auto;background:url(https://img3.doubanio.com/f/movie/8cf33706051d29ae3cf98091070f0ec2481959ed/pics/movie/bite_me@2x.jpg) no-repeat;background-size:contain}
+ul.embassy-list li .icon-embassy-weixin{display:block;position:relative;width:40px;height:40px;margin:0 auto 5px auto;background-image:url(https://img3.doubanio.com/f/movie/5d377d72b39a5cd2532813d1e42da3f34438a465/pics/movie/home_weixin.png);)}
+ul.embassy-list li .icon-embassy-weixin .hover{display:none}ul.embassy-list li .icon-embassy-weixin:hover .hover{display:block;position:absolute;top:65px;left:-7px;z-index:1}
+.home-qrcode{width:130px;height:130px}
+.clearfix {
+    zoom: 1;
+    display: block;
+    _height: 1px;
+}
+html h2 {
+    font-size: 16px;
+}
+html body, html td, html th, html .pl, html input {
+    font-size: 13px;
+}
+#contact-and-cooperation img {
+    height: 14px;
+    margin-top: -2px;
+    vertical-align: middle;
+}
